@@ -1,37 +1,26 @@
 # AIDG Legal Pages
 
-Public legal pages for `UNSCRIPTED AI DEATH GAME -Prompt to Kill-`.
+`UNSCRIPTED AI DEATH GAME -Prompt to Kill-` の公開用法務ページ置き場。
 
-## Files
+## 公開URL
 
-- `privacy-policy.html` - public privacy policy page for Steamworks metadata.
-
-## GitHub Pages
-
-Recommended repository name:
+プライバシーポリシー:
 
 ```text
-aidg-legal
+https://3457457547.github.io/aidg-legal/privacy-policy.html
 ```
 
-Recommended public URL:
+## ファイル
 
-```text
-https://<github-account>.github.io/aidg-legal/privacy-policy.html
-```
+| ファイル | 用途 |
+|---|---|
+| `privacy-policy.html` | Steamworks の Privacy Policy URL に入力する公開ページ |
+| `.nojekyll` | GitHub Pages で余計なJekyll処理を避けるための空ファイル |
 
-After creating the GitHub repository:
+## 更新手順
 
-```powershell
-git remote add origin https://github.com/<github-account>/aidg-legal.git
-git branch -M main
-git push -u origin main
-```
-
-Then enable GitHub Pages:
-
-1. Open repository Settings.
-2. Open Pages.
-3. Source: Deploy from a branch.
-4. Branch: `main`.
-5. Folder: `/root`.
+1. メインプロジェクト側の `ai-death-game-desktop/docs/privacy-policy.md` を更新する。
+2. メインプロジェクト側の `ai-death-game-desktop/docs/privacy-policy.html` も同内容に更新する。
+3. このリポジトリの `privacy-policy.html` へコピーする。
+4. commit / push する。
+5. 公開URLを開いて反映を確認する。
